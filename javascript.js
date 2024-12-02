@@ -1,5 +1,3 @@
-gridContainer = document.querySelector(".grid-container");
-
 let size;
 
 while (true) {
@@ -8,6 +6,12 @@ while (true) {
         break;
     }
 }
+
+gridHeader = document.querySelector(".grid-header");
+
+gridContainer = document.querySelector(".grid-container");
+
+gridHeader.innerText = `${size} x ${size} Square Grid`;
 
 // gridSquare = document.createElement("div");
 // gridSquare.style.width = "35px";
