@@ -44,5 +44,12 @@ gridSemiContainers.forEach(item => {
     }
 });
 
+gridSquares = document.querySelectorAll(".grid-square");
+gridSquares.forEach(item => {
+    item.addEventListener("mouseenter", (event) => {
+        event.currentTarget.style.backgroundColor = "orange";
+    });
+});
+
 
 
