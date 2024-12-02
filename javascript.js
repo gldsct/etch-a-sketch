@@ -1,12 +1,5 @@
 let gridSize;
 
-// while (true) {
-//     size = prompt("Enter a size between 1 and 100.");
-//     if (size <= 100 && size > 0) {
-//         break;
-//     }
-// }
-
 gridHeader = document.querySelector(".grid-header");
 
 gridContainer = document.querySelector(".grid-container");
@@ -60,25 +53,4 @@ gridSizeButton.addEventListener("click", (event) => {
     });
 
 });
-
-// gridSquare = document.createElement("div");
-// gridSquare.style.width = "35px";
-// gridSquare.style.height = "35px";
-// gridSquare.style.backgroundColor = "#CFCFCD";
-// gridSquare.style.border = "1px solid #563440";
-
-// gridContainer.appendChild(gridSquare);
-
-// for (i = 0; i < 16; i ++) {
-//     gridSquare = document.createElement("div");
-//     gridSquare.style.width = "35px";
-//     gridSquare.style.height = "35px";
-//     gridSquare.style.backgroundColor = "#CFCFCD";
-//     gridSquare.style.border = "1px solid #563440";
-//     gridContainer.appendChild(gridSquare);
-// }
-
-
-
-
 
