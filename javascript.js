@@ -35,6 +35,7 @@ gridSemiContainers.forEach(item => {
 gridSemiContainers.forEach(item => {
     for (i = 0; i < 16; i ++) {
     gridSquare = document.createElement("div");
+    gridSquare.className = "grid-square";
     gridSquare.style.width = "35px";
     gridSquare.style.height = "35px";
     gridSquare.style.backgroundColor = "#CFCFCD";
@@ -42,3 +43,6 @@ gridSemiContainers.forEach(item => {
     item.appendChild(gridSquare);  
     }
 });
+
+
+
