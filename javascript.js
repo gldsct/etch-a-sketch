@@ -18,7 +18,7 @@ gridSizeButton.addEventListener("click", (event) => {
    gridSize = gridSizeInput.value;
     gridHeader.innerText = `${gridSize} x ${gridSize} Square Grid`;
 
-    for (i = 0; i <gridSize; i ++) {
+    for (i = 0; i < gridSize; i ++) {
         gridSemiContainer = document.createElement("div");
         gridSemiContainer.className = "grid-semi-container";
         gridSemiContainer.style.height = `${560/gridSize}px`;
@@ -34,7 +34,7 @@ gridSizeButton.addEventListener("click", (event) => {
     });
     
     gridSemiContainers.forEach(item => {
-        for (i = 0; i <gridSize; i ++) {
+        for (i = 0; i < gridSize; i ++) {
         gridSquare = document.createElement("div");
         gridSquare.className = "grid-square";
         gridSquare.style.width = `${560/gridSize}px`;
