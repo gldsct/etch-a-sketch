@@ -1,28 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* VARIABLE DEFINITIONS */
+
 :root{
-    --BODY-BACKGORUND-COLOR: #D7DEDC;
+    --BODY-BACKGROUND-COLOR: #D7DEDC;
     --HEADER-BACKGROUND-COLOR: #CFCFCD;
     --HEADER-COLOR: #7A3B69;
+    --MAIN-TEXT-COLOR: #9A879D;
+    --GRID-BORDER-COLOR: #563440;
 }
+
+/* GENERAL BODY STYLING */
 
 body {
     font-family: "Roboto", sans-serif;
-    background-color: var(--BODY-BACKGORUND-COLOR);
+    background-color: var(--BODY-BACKGROUND-COLOR);
     
 }
 
+/* HEADER SECTION */
+
 header {
     background-color: var(--HEADER-BACKGROUND-COLOR);
+    padding: 12px;
+}
+
+header h1 {
     text-align: center;
-    font-size: 16px;
+    font-size: 48px;
     font-weight: bold;
     color: var(--HEADER-COLOR);
-    padding: 12px;
+}
+
+/* MAIN SECTION */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2 {
+    color: var(--MAIN-TEXT-COLOR);
+    font-size: 32px;
+    font-weight: bold;
+    margin: 16px;
+}
+
+.grid-container {
+    height: 560px;
+    width: 560px;
+    border: 1px solid var(--GRID-BORDER-COLOR);
 }
