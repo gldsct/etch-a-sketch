@@ -16,7 +16,7 @@ gridSizeButton.addEventListener("click", (event) => {
                 gridContainer.removeChild(item);
             });
         }
-        
+
         gridSize = gridSizeInput.value;
         gridHeader.innerText = `${gridSize} x ${gridSize} Square Grid`;
 
@@ -50,7 +50,7 @@ gridSizeButton.addEventListener("click", (event) => {
         gridSquares = document.querySelectorAll(".grid-square");
         gridSquares.forEach(item => {
             item.addEventListener("mouseenter", (event) => {
-                event.currentTarget.style.backgroundColor = "orange";
+                event.currentTarget.style.backgroundColor = randomizeColor();
             });
         });
     }
@@ -61,4 +61,11 @@ gridSizeButton.addEventListener("click", (event) => {
 
 function checkLimit(size) {
     return (size > 0 && size <= 100);
+}
+
+function randomizeColor() {
+    let red = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    return `rgb(${red}, ${blue}, ${green})`;
 }
